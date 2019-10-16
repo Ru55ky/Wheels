@@ -2,12 +2,23 @@ body{
     margin: 0;
     padding: 0%;
 }
-
+@font-face{
+  font-family: 'Semibold';
+  font-weight: 200;
+  src: url(fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+  font-family: 'Light Italic';
+  font-weight: 200;
+  src: url(fonts/Raleway-LightItalic.ttf);
+}
 .bg-logo{
 width: 100%;
-height: 1080px;
-position: absolute;
-} 
+height: 800px;
+background: url(img/bg-img.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
 //контейнер перед названием и меню + бургер
 #first-container{
   display: flex;
@@ -17,7 +28,6 @@ position: absolute;
   display: flex;
 }
 .container-1{
-    display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     margin-top: 10%;
@@ -26,9 +36,9 @@ position: absolute;
     color: white;
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
-    position: relative;
+   position: relative;
     flex-basis: 80%;
-    margin-left: 8%;
+    margin-left: 4em;
 }
 
 //бургер
@@ -38,9 +48,8 @@ position: absolute;
     font-family: 'Raleway', sans-serif;
     font-size: 28px;
     margin: auto;
-    position: relative;
+    z-index: 1;
     flex-basis: 5%;
-    
 }//кнопка-бургер
 .btn{
     order: 2;
@@ -49,14 +58,13 @@ position: absolute;
     align-self: stretch;
     margin: auto;
     position: relative;
-    flex-basis: 20%;
-    
+    flex-basis: 12%;
 }
 .btn span,
 .btn span::before,
 .btn span::after{
     position: absolute;
-    top: 145%; margin-top: -2px;
+    top: 145%; margin-top: -3px;
     width: 20px;
     height: 2px;
     background-color: white;
@@ -84,38 +92,144 @@ position: absolute;
   transform: rotate(-45deg);
 }
 //контейнер под меню с текстом
-#flex-container-second{
+.flex-container-second{
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  
-  align-self: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  height: 320px;
+  width: 90%;
 }
-
 .text-first{
   font-family: 'Raleway', sans-serif;
   color: white;
   font-size: 48px;
-  position: relative;
-
+  z-index: 1;
 }
 .text-second{
   font-family: 'Raleway', Regular ;
   color: white;
   font-weight: 200;
-  position: relative;
+  z-index: 1;
   font-size: 24px;
 }
 .text-third{
   font-family: 'Raleway', Regular;
   color: white;
-  position: relative;
+  z-index: 1;
   font-size: 24px;
   font-weight: 200;
 }
 .text-fourth{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Light Italic';
   color: white;
-  position: relative;
+  z-index: 1;
   font-weight: 200;
+}
+@media screen and(max-width: 1440px){
+  .flex-container-second{
+    width: 90%;
+  }
+  .text-first{
+    font-size: 30px;
+  }
+}
+//NavBar
+.navbar{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+}
+.main-item{
+  color: #1c1c1c;
+  flex-basis: 10%;
+  font-weight: 700;
+  font-family: 'Raleway';
+  font-size: 30px;
+  text-decoration: none;
+}
+.nav-item{
+  color: #3b3b3b;
+  font-family: 'Semibold';
+  text-decoration: none;
+}
+
+//раздел "О Нас"
+.container-third{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.third-title{
+  font-family: 'Raleway';
+  font-size: 30px;
+  font-weight: 700;
+  color: #1c1c1c;
+  margin: auto;
+}
+.third-title-second{
+  font-family: 'Semibold';
+  font-size: 18px;
+  color: #3b3b3b;
+  margin: auto;
+}
+.bike{
+  margin: auto;
+}
+.third-text{
+  font-family: 'Semibold';
+  font-size: 14px;
+  color: #3b3b3b;
+  margin: auto;
+  max-width: 1300px;
+}
+//раздел "Statistic
+.container-4{
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+}
+.statistic-img{
+  max-width: 100%;
+  height: 480px;
+  background-image: url(img/Statistic.jpg);
+  background-repeat: no-repeat;
+}
+.statistic-title{
+  font-family: 'Raleway';
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: auto;
+  align-self: flex-end;
+}
+.statistic-text{
+  font-family: 'Semibold';
+  font-size: 18px;
+  font-weight: 100;
+  color: #ffffff;
+  margin: auto;
+  align-self: flex-start;
+}
+.container-5{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 150px;
+}
+.statistic-number-1{
+  font-family: 'Semibold';
+  font-size: 72px;
+  color: #ffffff;
+  align-self: flex-end;
+}
+.statistic-text-1{
+  font-family: 'Semibold';
+  font-size: 24px;
+  color: #ffffff;
+  align-self: flex-end;
 }
