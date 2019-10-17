@@ -15,6 +15,10 @@ body{
   font-weight: 200;
   src: url(fonts/Raleway-LightItalic.ttf);
 }
+@font-face{
+  font-family: 'Bold';
+  src: url(fonts/Raleway-Bold.ttf);
+}
 .bg-logo{
 width: 100%;
 height: 800px;
@@ -237,6 +241,7 @@ background-repeat: no-repeat;
   color: #ffffff;
   align-self: flex-end;
 }
+
 //раздел с велосипедами
 .container-6{
   display: flex;
@@ -248,12 +253,20 @@ background-repeat: no-repeat;
   margin: auto;
   margin-top: 8%;
 }
+//текст над велосипедами
+.bikes-text-container{
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+
+}
+
 .bikes-title{
   font-family: 'Raleway';
   font-size: 30px;
   font-weight: 800;
   color: #1c1c1c;
-  align-self: baseline;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -262,7 +275,6 @@ background-repeat: no-repeat;
   font-size: 18px;
   color: #3b3b3b;
   margin: auto;
-  
 }
 .bikes{
   display: flex;
@@ -277,6 +289,17 @@ background-repeat: no-repeat;
 }
 .bikes-desc1{
   margin: auto;
+  font-family: 'Bold';
+  font-weight: 500;
+  font-size: 24px;
+  color: #3b3b3b;
+}
+//ссылка на велосипед
+.learn{
+  font-family: 'Bold';
+  font-weight: 200;
+  font-size: 24px;
+  color: #3b3b3b;
 }
 .bikes2{
   width: 398px;
