@@ -321,6 +321,7 @@ body {
   align-self: flex-start;
   height: 50px;
   position: absolute;
+  margin-top: 3%;
 }
 .cont7-title {
   margin-left: auto;
@@ -340,9 +341,11 @@ body {
 .container-7 {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
-  height: 530px;
+  align-items: flex-end;
+  height: 600px;
+  max-width: 100%;
 }
 .background-container {
   height: 530px;
@@ -370,4 +373,23 @@ body {
   background-image: url(img/Juan-copy.png);
   background-repeat: no-repeat;
   z-index: 1;
+}
+.people {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+.people p {
+  font-family: 'Raleway';
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  top: 100%;
+}
+.people span {
+  font-family: 'Semibold';
+  font-size: 18px;
+  font-weight: 200;
 }

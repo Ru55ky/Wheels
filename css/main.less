@@ -330,7 +330,6 @@ background-repeat: no-repeat;
   background-repeat: no-repeat;
 }
 //People
-
 //название/текст над разделом с People
 .container7-text{
   display: flex;
@@ -338,6 +337,7 @@ background-repeat: no-repeat;
   align-self: flex-start;
   height: 50px;
   position: absolute;
+  margin-top: 3%;
 }
 .cont7-title{
   margin-left: auto;
@@ -357,11 +357,12 @@ background-repeat: no-repeat;
 .container-7{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
-  height: 530px;
+  align-items: flex-end;
+  height: 600px;
+  max-width: 100%;
 }
-
 .background-container{
 height: 530px;
 width: 100%;
@@ -388,4 +389,24 @@ position: absolute;
   background-image: url(img/Juan-copy.png);
   background-repeat: no-repeat;
   z-index: 1;
+}
+.people{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+.people p{
+  font-family: 'Raleway';
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  top: 100%;
+
+}
+.people span{
+  font-family: 'Semibold';
+  font-size: 18px;
+  font-weight: 200;
 }
